@@ -1,66 +1,235 @@
-<html>
-    <head>
-        <title>SHOPPING APPS</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPING APPS</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
         
-    </head>
+        .container {
+            max-width: 1200px; /* Limit the maximum width of the content */
+            width: 100%; /* Responsive width */
+            padding: 20px;
+            background-color: #fff; /* Main content background */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            position: relative; /* For the corner letter */
+            overflow: hidden; /* Remove overflow for corner letter */
+        }
+
+        .corner-letter {
+            position: absolute; /* Fixed position in the corner */
+            top: 20px;
+            left: 20px;
+            font-size: 4em; /* Adjust size as needed */
+            color: #007bff; /* Color of the letter */
+            opacity: 0.1; /* Light opacity for a background effect */
+            z-index: 1;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 10px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 10px 10px 0 0; /* Rounded top corners */
+        }
+
+        h1 {
+            font-size: 3em; /* Large title */
+            margin: 0.5em 0;
+        }
+
+        h2 {
+            font-size: 2em; /* Subheading */
+            margin: 0.5em 0;
+        }
+
+        h3 {
+            font-size: 1.5em; /* Section headings */
+            margin: 0.5em 0;
+        }
+
+        img {
+            height: auto;
+            width: 100%;
+            max-width: 250px; /* Responsive images */
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        hr {
+            border: 1px solid #343a40;
+            margin: 40px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            line-height: 2; /* Better visibility */
+        }
+
+        li {
+            font-size: 1.2em; /* List item font size */
+            color: #007bff;
+            transition: color 0.3s; /* Smooth hover effect */
+        }
+
+        li:hover {
+            color: #0056b3; /* Color change on hover */
+        }
+
+        button {
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em; /* Button font size */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        button a {
+            color: white;
+            text-decoration: none; /* Remove underline from link */
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        /* Flexbox layout for images */
+        .image-container {
+            display: flex;
+            justify-content: center; /* Center images */
+            flex-wrap: wrap; /* Wrap images as needed */
+        }
+
+        /* Responsive Design for Different Screens */
+        @media (max-width: 1200px) {
+            h1 {
+                font-size: 2.5em; /* Adjust heading size for medium screens */
+            }
+            h2 {
+                font-size: 1.8em; /* Slightly smaller subheadings */
+            }
+            h3 {
+                font-size: 1.4em; /* Adjust section headings */
+            }
+        }
+
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.2em; /* Further reduce heading size for smaller screens */
+            }
+            img {
+                max-width: 90%; /* Responsive image on smaller screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em; /* Mobile heading size */
+            }
+            h2 {
+                font-size: 1.5em; /* Mobile subheading size */
+            }
+            h3 {
+                font-size: 1.3em; /* Mobile section heading size */
+            }
+            button {
+                font-size: 1em; /* Button size adjustment */
+            }
+        }
+
+        @media (max-width: 576px) {
+            header {
+                padding: 15px; /* Reduce padding on mobile */
+            }
+            .corner-letter {
+                font-size: 3em; /* Smaller corner letter for mobile */
+                top: 10px; /* Position adjustments */
+                left: 10px;
+            }
+            button {
+                padding: 10px 20px; /* Smaller button padding */
+            }
+        }
+    </style>
+</head>
 
 <body>
-        <center>
-<h1>SHOPPING APPS🛒🛍️</h1>
+    <div class="container">
+        <div class="corner-letter">A</div> <!-- The corner letter -->
+        <header>
+            <h1>SHOPPING APPS 🛒🛍️</h1>
+            <h2>🛍️ DISCOVER THE ULTIMATE SHOPPING EXPERIENCE WITH TOP APPS LIKE AMAZON, FLIPKART, MEESHO, MYNTRA, AND SHOPSY 📱🛒✨</h2>
+            <h3>🔥 ENJOY UNBEATABLE DEALS 💸, A VAST SELECTION 🛍️, AND CONVENIENCE AT YOUR FINGERTIPS 📱✨</h3>
+        </header>
 
-<h2>🛍️ DISCOVER THE ULTIMATE SHOPPING EXPERIENCE WITH TOP APPS LIKE AMAZON, FLIPKART, MEESHO, MYNTRA, AND SHOPSY 📱🛒✨</h2>
-<h3>🔥 ENJOY UNBEATABLE DEALS 💸, A VAST SELECTION 🛍️, AND CONVENIENCE AT YOUR FINGERTIPS 📱✨</h3>
-<img src="shop1.jpeg" height="200px" width="200px"><img src="shop3.jpeg" height="200px" width="200px"><img src="shop2.jpeg" height="200px" width="200px"><br>
-<br>
-<hr>
-</center>
+        <div class="image-container">
+            <img src="shop1.jpeg" alt="Shop Image 1">
+            <img src="shop2.jpeg" alt="Shop Image 2">
+            <img src="shop3.jpeg" alt="Shop Image 3">
+        </div>
+        
+        <hr>
 
+        <h2><u>TOP TRENDS IN ONLINE SHOPPING</u></h2>
+        <ul>
+            <li>Amazon</li>
+            <li>Flipkart</li>
+            <li>Meesho</li>
+            <li>Myntra</li>
+            <li>Shopsy</li>
+        </ul>
 
-
-    <h2> <u>TOP TRENDS IN ONLINE SHOPPING</u></h2>
-    <uL>
-        <h3>
-        <b><li>Amazon</li>
-        <li>Flipkart</li>
-        <li>Meesho</li>
-        <li>Myntra</li>
-        <li>Shopsy</li>
-    </b>
-</h3>
-    </uL>
-<p>
-    <b>
         <h2><b><u>🛍️ OVERVIEW OF EACH SHOPPING APP ALONG WITH THEIR FOCUS MATERIALS OR PRODUCT CATEGORIES 🔍</u></b></h2>  
         <h3>🛒 AMAZON</h3>  
-<u><b>OVERVIEW:</b></u> Amazon is a global e-commerce leader, providing an extensive selection of products across categories like electronics, clothing, books, and groceries. It is known for its comprehensive shopping experience and fast delivery options. 🚀  
-<br>  
-<u><b>PRODUCT CATEGORIES:</b></u> 📱 Electronics, 👗 Fashion, 🏠 Home Goods, 📚 Books, 🛒 Groceries, 💄 Beauty Products.  <h3>📦 FLIPKART</h3>  
-<u><b>OVERVIEW:</b></u> Flipkart is one of India's largest online marketplaces, focusing on a diverse range of products, particularly electronics and fashion. It has played a significant role in popularizing online shopping within India. 🇮🇳  
-<br>  
-<u><b>PRODUCT CATEGORIES:</b></u>📱 Electronics, 👕 Fashion, 🏠 Home Appliances, 🛋️ Furniture, 👶 Baby Products.  <h3>📲 MEESHO</h3>  
-<u><b>OVERVIEW:</b></u> Meesho is a social commerce platform in India that enables individuals, especially women, to start their own online businesses by reselling products through social media. It aims to empower entrepreneurs with zero investment. 💼  
-<br>  
-<u><b>PRODUCT CATEGORIES:</b></u>👗 Clothing, 💍 Accessories, 🏡 Home Décor, 💅 Beauty Products.  <h3>👗 MYNTRA</h3>  
-<u><b>OVERVIEW:</b></u> Myntra specializes in fashion and lifestyle products in India, offering a wide range of apparel and accessories from both international and local brands. It’s a go-to platform for fashion enthusiasts. ✨  
-<br>  
-<u><b>PRODUCT CATEGORIES:</b></u>👕 Clothing, 👟 Footwear, 🎀 Accessories, 💄 Beauty Products, 🛋️ Lifestyle Items.  <h3>🛍️ SHOPSY</h3>  
-<u><b>OVERVIEW:</b></u> Shopsy, an initiative by Flipkart, is tailored for small sellers and businesses in India, enabling them to reach customers with affordable products across various categories. 💰  
-<br>  
-<u><b>PRODUCT CATEGORIES:</b></u>👗 Clothing, 📱 Electronics, 🏠 Home Essentials, 💄 Beauty Products, and more.
-    </b>
+        <u><b>OVERVIEW:</b></u> Amazon is a global e-commerce leader, providing an extensive selection of products across categories like electronics, clothing, books, and groceries. It is known for its comprehensive shopping experience and fast delivery options. 🚀  
+        <br>  
+        <u><b>PRODUCT CATEGORIES:</b></u> 📱 Electronics, 👗 Fashion, 🏠 Home Goods, 📚 Books, 🛒 Groceries, 💄 Beauty Products.  
 
+        <h3>📦 FLIPKART</h3>  
+        <u><b>OVERVIEW:</b></u> Flipkart is one of India's largest online marketplaces, focusing on a diverse range of products, particularly electronics and fashion. It has played a significant role in popularizing online shopping within India. 🇮🇳  
+        <br>  
+        <u><b>PRODUCT CATEGORIES:</b></u> 📱 Electronics, 👕 Fashion, 🏠 Home Appliances, 🛋️ Furniture, 👶 Baby Products.  
 
+        <h3>📲 MEESHO</h3>  
+        <u><b>OVERVIEW:</b></u> Meesho is a social commerce platform in India that enables individuals, especially women, to start their own online businesses by reselling products through social media. It aims to empower entrepreneurs with zero investment. 💼  
+        <br>  
+        <u><b>PRODUCT CATEGORIES:</b></u> 👗 Clothing, 💍 Accessories, 🏡 Home Décor, 💅 Beauty Products.  
 
+        <h3>👗 MYNTRA</h3>  
+        <u><b>OVERVIEW:</b></u> Myntra specializes in fashion and lifestyle products in India, offering a wide range of apparel and accessories from both international and local brands. It’s a go-to platform for fashion enthusiasts. ✨  
+        <br>  
+        <u><b>PRODUCT CATEGORIES:</b></u> 👕 Clothing, 👟 Footwear, 🎀 Accessories, 💄 Beauty Products, 🛋️ Lifestyle Items.  
 
-</p><br><br>
-<hr>
+        <h3>🛍️ SHOPSY</h3>  
+        <u><b>OVERVIEW:</b></u> Shopsy, an initiative by Flipkart, is tailored for small sellers and businesses in India, enabling them to reach customers with affordable products across various categories. 💰  
+        <br>  
+        <u><b>PRODUCT CATEGORIES:</b></u> 👗 Clothing, 📱 Electronics, 🏠 Home Essentials, 💄 Beauty Products, and more.
+        
+        <br><br>
+        <hr>
 
-<center>
-
-<button><a href="shop register.html">REGISTRATION FROM</a></button>
-
-</center>
-    </body>
-
+        <div style="text-align:center;">
+            <button><a href="shop register.html">REGISTRATION FORM</a></button>
+        </div>
+    </div>
+</body>
 </html>
-
