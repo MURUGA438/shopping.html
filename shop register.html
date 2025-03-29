@@ -1,61 +1,154 @@
-<html>
-    <head>
-        <title>Register</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Light background color */
+            color: #333;
+            line-height: 1.6;
+        }
 
-    </head>
-    <body><br><br>
-        <center>
-            <h1>SHOPPING APPS🛒🛍️</h1>
-            <h2>🛍️ DISCOVER THE ULTIMATE SHOPPING EXPERIENCE WITH TOP APPS LIKE AMAZON, FLIPKART, MEESHO, MYNTRA, AND SHOPSY 📱🛒✨</h2>
-<h3>🔥 ENJOY UNBEATABLE DEALS 💸, A VAST SELECTION 🛍️, AND CONVENIENCE AT YOUR FINGERTIPS 📱✨</h3>
-                </center>
-<br>
-   <hr> 
-<center>
-    <h2>Registration From</h2>
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff; /* Blue header */
+            color: white;
+        }
 
-<form>
-    <table>
-        <tr>
-            <td>Frist Name:</td><td><input type="text" placeholder="Enter your Frist Name"></td>
-        </tr>
+        h1 {
+            font-size: 2.5em; /* Larger title */
+            margin: 0.5em 0; /* Margin adjustments */
+        }
 
-        <tr>
-            <td>Middle Name:</td><td><input type="text" placeholder="Enter your Middle Name"></td>
-        </tr>
+        h2 {
+            font-size: 1.8em; /* Subheading */
+            margin: 0.5em 0; /* Margin adjustments */
+        }
 
+        h3 {
+            font-size: 1.2em; /* Section heading */
+            margin: 0.5em 0; /* Margin adjustments */
+        }
 
-        <tr>
-            <td>Last Name:</td><td><input type="text" placeholder="Enter your Last Name"></td>
-        </tr>
+        /* Form Styling */
+        .container {
+            max-width: 600px; /* Limit form width */
+            margin: 20px auto; /* Center form */
+            background: white; /* White background for form */
+            padding: 20px; /* Padding inside form */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
 
-        <tr>
-            <td>Age:</td><td><input type="number" placeholder="Enter your Age"></td>
-        </tr>
+        table {
+            width: 100%; /* Full width tables */
+            border-collapse: collapse; /* Merge borders */
+        }
 
-        
+        td {
+            padding: 10px; /* Padding for table cells */
+            vertical-align: top; /* Align content to top */
+        }
 
-        <tr>
-            <td>Email ID:</td><td><input type="text" placeholder="Enter your Email ID"></td>
-        </tr>
+        input[type="text"], input[type="number"], input[type="date"] {
+            width: 100%; /* Full width for inputs */
+            padding: 10px; /* Padding inside inputs */
+            border-radius: 5px; /* Rounded corners */
+            border: 1px solid #ced4da; /* Light border */
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Inner shadow */
+        }
 
-        <tr>
-            <td>Date of Birth:</td><td><input type="date"></td>
-        </tr>
-        
-        <tr>
-            <td>Gender</td>
-            <td>
-                <input type="radio" name="Gender">Male
-                <input type="radio" name="Gender">Female
-            </td>
-        </tr>
+        input[type="radio"] {
+            margin-right: 5px; /* Space for radio buttons */
+        }
 
-    </table>
-</form>
+        button {
+            display: block; /* Block button */
+            width: 100%; /* Full width button */
+            padding: 15px; /* Padding */
+            background-color: #007bff; /* Button color */
+            color: white; /* Button text color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer on hover */
+            font-size: 1.2em; /* Button font size */
+            margin-top: 20px; /* Space above button */
+        }
 
-<button><a href="pages.html">Submit</a></button>
-</center>
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
 
-    </body>
-    </html>
+        a {
+            color: white; /* Link color */
+            text-decoration: none; /* Remove underline */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em; /* Adjust header for smaller screens */
+            }
+            h2 {
+                font-size: 1.5em; /* Adjust subheading for smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SHOPPING APPS 🛒🛍️</h1>
+        <h2>🛍️ DISCOVER THE ULTIMATE SHOPPING EXPERIENCE</h2>
+        <h3>🔥 ENJOY UNBEATABLE DEALS 💸</h3>
+    </header>
+
+    <div class="container">
+        <h2>Registration Form</h2>
+
+        <form>
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" placeholder="Enter your First Name" required></td>
+                </tr>
+                <tr>
+                    <td>Middle Name:</td>
+                    <td><input type="text" placeholder="Enter your Middle Name"></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" placeholder="Enter your Last Name" required></td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="number" placeholder="Enter your Age" required></td>
+                </tr>
+                <tr>
+                    <td>Email ID:</td>
+                    <td><input type="text" placeholder="Enter your Email ID" required></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date" required></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="Gender" value="Male" required> Male
+                        <input type="radio" name="Gender" value="Female"> Female
+                    </td>
+                </tr>
+            </table>
+            
+            <button type="submit"><a href="pages.html">Submit</a></button>
+        </form>
+    </div>
+</body>
+</html>
